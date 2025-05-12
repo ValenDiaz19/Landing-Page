@@ -1,0 +1,269 @@
+html{
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        color: #000;
+        line-height: 1.6;
+      }
+      header {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; 
+  height: auto;
+}
+
+.hero {
+  background-color: #ccc;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero .texto {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.cta button {
+  margin-top: 10rem;
+  padding: 0.75rem 1.5rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+      
+.beneficios {
+  background-color: #d3d3d3;
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  background-color: #bfbfbf;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  height: 80px; 
+}
+
+}
+
+.beneficio .icono {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+
+
+      
+      .carousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem 2rem;
+      }
+      
+      .video-card, .persona-card {
+        min-width: 200px;
+        background: #fff;
+        padding: 1rem;
+        border: 1px solid #ccc;
+      }
+      
+      .video-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem;
+      }
+      
+
+
+
+      
+      .persona-card .avatar {
+        width: 100px;
+        height: 100px;
+        background: #000;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+      }
+      
+.interes {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+.interes h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.interes p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.interes ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+.interes li {
+  margin-bottom: 0.5rem;
+}
+.boton-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+      
+      .formulario {
+  display: flex;
+  background: #222;
+  color: #fff;
+  padding: 10rem 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form-img {
+  background-color: #555;
+  width: 350px;
+  height: 250px;
+  flex-shrink: 0;
+  background-image: url("form-placeholder.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
+.form-box {
+  max-width: 400px;
+}
+.form-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-box input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+.form-box button {
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 0.6rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+      
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.redes {
+  margin-bottom: 1rem;
+}
+.punto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+.footer-links a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+.footer-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-imgs .box {
+  width: 100px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+    
