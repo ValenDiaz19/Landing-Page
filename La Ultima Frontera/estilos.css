@@ -1,0 +1,384 @@
+html{
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        color: #000;
+        line-height: 1.6;
+      }
+      header {
+  background: #2E0839;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px; 
+  height: auto;
+}
+
+.hero {
+  background-color: #ccc;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero .texto {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.cta button {
+  margin-top: 10rem;
+  padding: 0.75rem 1.5rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+      
+.beneficios {
+  background-color: #d3d3d3;
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  background-color: #bfbfbf;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  height: 80px; 
+}
+
+}
+
+.beneficio .icono {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.ultimos-videos {
+  padding: 2rem;
+  background-color: #0b0b3a; /* color oscuro como el resto del sitio */
+  color: white;
+}
+
+.ultimos-videos h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-card {
+  min-width: 320px;
+  background-color: #1b1b52;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1rem;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border: none;
+  border-radius: 8px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+
+
+      
+.invitados {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.invitados h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-inline: 1rem;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  min-width: 80%;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.card img {
+  width: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+}
+
+.card .cargo {
+  font-size: 1.1rem;
+  color: #422929;
+  margin: 0.3rem 0;
+}
+
+.card .descripcion {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Desktop version */
+@media (min-width: 768px) {
+  .cards-container {
+    flex-wrap: wrap;
+    overflow: visible;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 0 1 22%;
+    min-width: auto;
+  }
+
+  .card img {
+    width: 30%; /* mantiene proporción más reducida */
+  }
+
+  .container {
+  max-width: 1200px;  /* o 1100, según te guste */
+  margin: 0 auto;
+  padding: 0 1rem;     /* algo de padding lateral para mobile */
+}
+
+}
+
+.interes {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+.interes h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.interes p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.interes ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+.interes li {
+  margin-bottom: 0.5rem;
+}
+.boton-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+      
+      .formulario {
+  display: flex;
+  background: #222;
+  color: #fff;
+  padding: 10rem 2rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form-img {
+  background-color: #555;
+  width: 350px;
+  height: 250px;
+  flex-shrink: 0;
+  background-image: url("form-placeholder.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
+.form-box {
+  max-width: 400px;
+}
+.form-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-box input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+.form-box button {
+  background-color: #e0e0e0;
+  color: #000;
+  padding: 0.6rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+      
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.redes {
+  margin-bottom: 1rem;
+}
+.punto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+.footer-links a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+.footer-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-imgs .box {
+  width: 100px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+    
